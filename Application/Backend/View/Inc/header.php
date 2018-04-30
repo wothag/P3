@@ -1,8 +1,4 @@
-<?php ob_start(); ?>
-
-
 <!doctype html>
-<html>
         <head>
             <title> Administration du Site</title>
             <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -19,11 +15,9 @@
         </head>
 
 
-
-    <body>
      <div class="container-fluid">
-     <div class="row">
-        <!--start of side panel-->
+        <div class="row">
+         <!--start of side panel-->
         <div class="col-sm-2"</div>
             <h2>Jean forteroche</h2>
                 <ul id="Side_Menu"class="nav nav-pills nav-stacked">
@@ -34,4 +28,4 @@
                     <li><a href="../Backend/index.php?action=deconnection"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Se déconnecter</a></li>
                 </ul>
         </div>
-        <!--end of side panel-->
+<!--end of side panel-->

@@ -1,5 +1,4 @@
 <?php include_once ('View/Inc/header.php'); ?>
-
     <!--start of main panel-->
         <div class="col-sm-10">
             <h1> Vue de tous les résumés des chapitres</h1>
@@ -8,7 +7,7 @@
 			            <thead>
                         <tr>
                         <th>chapitre</th><th>Date</th><th>Contenu</th><th>Auteur</th><th>Effacer</th><th>Modifier</th>
-			             </thead>
+                        </thead>
         <?php 
           while ($data = $allchapters->fetch())
           {
@@ -27,13 +26,8 @@
         $allchapters->closeCursor();
         ?>
                     </table>
-                <!--end of main panel-->
-
-              <!--end of bootstrap row-->
- <?php include_once ('View/Inc/footer.php');?>
                 </div>
         </div>
+    </body>
+</html>
 
-
-<?php $content = ob_get_clean();
-require('template.php');?>

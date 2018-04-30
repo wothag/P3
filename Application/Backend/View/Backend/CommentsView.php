@@ -2,14 +2,19 @@
         <div class="col-sm-10">
         <h1> Administration</h1>
             <!--start of main panel-->
-            <h4>Modération des commentaires<h4>
-            <div class="col-lg-12 table-responsive">
-      <table class="table table-bordered table-striped">
-			<thead>
-        <tr>
-          <th>Auteur</th><th>COMMENTAIRES</th><th>Chapitre</th><th>Date</th><th>Effacer</th><th>Modérer</th>
-			</thead>
-      </tr>
+            <h4>Modération des commentaires</h4>
+             <div class="col-lg-12 table-responsive">
+                 <table class="table table-bordered table-striped">
+			        <thead>
+                        <tr>
+                        <th>Auteur</th>
+                            <th>COMMENTAIRES</th>
+                            <th>Chapitre</th>
+                            <th>Date</th>
+                            <th>Effacer</th>
+                            <th>Modérer</th>
+                        </tr>
+			        </thead>
         <?php
            while($data=$flagcomment->fetch())
               {
@@ -21,15 +26,11 @@
                                     '<td>	<a class ="btn btn-warning" href="index.php?action=modifyComment&id='.$data['id'].'"><span class="glyphicon glyphicon-moins"></span> Modérer</a>',
                 '</tr>';
              }  ?>
-        </table>
-      </div>  
-    </div>
+             </table>
+            </div>
+        </div>
       </div>
            
-            <!--end of main panel-->        
-
-    </div>
-      <!--end of bootstrap row-->   
-    </div>
-    <!--end of bootstrap container-->
-<?php include_once ('View/Inc/footer.php');?>
+<!--end of main panel-->
+<!--end of bootstrap row-->
+<!--end of bootstrap container-->

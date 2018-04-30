@@ -1,18 +1,5 @@
 <?php
-		session_start();
-        require_once('Controller/backend.php');
-        require_once('Model/WriteManager.php');
-        require_once('Model/ChapterManager.php');
-		require_once('Model/ConnectManager.php');
-        require_once('../frontend/Model/PostManager.php');
-        require_once('../frontend/Model/CommentManager.php');
-
-
-
-
-
-
-
+		include_once ('./view/inc/init.php');
 try {
         if (!isset($_GET['action'])) {
 			HomeAdmin();
@@ -29,50 +16,52 @@ try {
 					}
 			}
 
-			{
-				if ($_GET['action'] == 'modcomments') {
-					modcomments();
-				}
+		{
+			if ($_GET['action'] == 'modcomments') {
+				modcomments();
+			}
 
-				if ($_GET['action'] == 'deleteComment') {
-					deletecomments($_GET['id']);
-				}
+			if ($_GET['action'] == 'deleteComment') {
+				deletecomments($_GET['id']);
+			}
 
-				if ($_GET['action'] == 'modifychapter') {
-					if (isset($_GET['id']) && $_GET['id'] > 0) {
+			if ($_GET['action'] == 'modifychapter') {
+				if (isset($_GET['id']) && $_GET['id'] > 0) {
 						modifychapter($_GET['id']);
-					}
-				}
-				if ($_GET['action'] == 'deleteChapter') {
-					deletechapter($_GET['id']);
-				}
-
-				if ($_GET['action'] == 'modifyComment') {
-					modifycomment($_GET['id']);
-				}
-
-				if ($_GET['action'] == 'allChapters') {
-					allchapters();
-				}
-
-				if ($_GET['action'] == 'writeChapter') {
-					writechapter();
-				}
-
-				if ($_GET['action'] == 'validChapterForm') {
-					validchapterform($_POST['title'], $_POST['author'], $_POST['content']);
-				}
-
-				if ($_GET['action'] == 'validUpdateChapterForm') {
-					validUpdatechapterform($_POST['id'], $_POST['title'], $_POST['author'], $_POST['content']);
-				}
-
-				if ($_GET['action'] == 'deconnection') {
-					deco();
 				}
 			}
+
+			if ($_GET['action'] == 'deleteChapter') {
+				deletechapter($_GET['id']);
+			}
+
+			if ($_GET['action'] == 'modifyComment') {
+				modifycomment($_GET['id']);
+			}
+
+			if ($_GET['action'] == 'allChapters') {
+				allchapters();
+			}
+
+			if ($_GET['action'] == 'writeChapter') {
+				writechapter();
+			}
+
+			if ($_GET['action'] == 'validChapterForm') {
+				validchapterform($_POST['title'], $_POST['author'], $_POST['content']);
+			}
+
+			if ($_GET['action'] == 'validUpdateChapterForm') {
+				validUpdatechapterform($_POST['id'], $_POST['title'], $_POST['author'], $_POST['content']);
+			}
+
+			if ($_GET['action'] == 'deconnection') {
+				deco();
+			}
 		}
-		}catch(Exception $e)
+        	}
+		}
+		catch(Exception $e)
 {
 	echo 'Erreur :'. $e->getMessage();
 }
