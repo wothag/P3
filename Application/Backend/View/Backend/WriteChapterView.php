@@ -23,13 +23,15 @@ $_SESSION['token'] = $token;
                     <label for="content">Ecrivez ci dessous votre épisode.</label>
                     <textarea class="form-control" name="content" id="content" rows="10"></textarea>
                 </div>
-            </fieldset>
-        </form>
-    </div>
+
+
         <br>
         <input class="btn btn-success btn-block btn-lg" type="submit" name="PUBLIER">
+            </fieldset>
         <input type ="hidden" name="token" value="<?php echo $token;?>" />
+        </form>
     </div>
+</div>
 <!--end of main panel-->
     </body>
 </html>

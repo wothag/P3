@@ -29,5 +29,5 @@
             </ul>
         </div>
 <!--end of side panel-->        
-    <body>    
+    <body>
 

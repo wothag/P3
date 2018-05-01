@@ -34,10 +34,9 @@ $_SESSION['token'] = $token;?>
             <br><br>
             <input type ="hidden" name="token" value="<?php echo $token;?>" />
         </form>
-        <?php include_once ('View/Inc/footer.php');?>
-                      </div>
-                <!--end of main panel-->
-        </div>
+    </div>
+    <!--end of main panel-->
+</div>
     </body>
 </html>
 

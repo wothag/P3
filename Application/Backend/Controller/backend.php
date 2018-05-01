@@ -162,7 +162,7 @@
 	 */
 	function deco()
 	{
-		require('View/Backend/decoView.php');
+		require('View/Backend/DecoView.php');
 		if (isset($_SESSION['admin'])) {
 			unset($_SESSION['admin']);
 		}
