@@ -12,6 +12,5 @@
 <body>
     <?= $content ?>
 </body>
-
 <?php include('Application/Frontend/Inc/footer.php');?>
 

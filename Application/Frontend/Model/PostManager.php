@@ -1,7 +1,5 @@
 <?php
-
 require_once 'Database.php';
-
 
 class PostManager extends Database
 {
@@ -37,7 +35,7 @@ class PostManager extends Database
 	public function paginate($page, $nb_chapters_per_page)
 	{
 		$db = $this->dbconnect();
-		$response = $db->prepare('SELECT id, title, author, content, DATE_FORMAT(date_created, \'%d/%m/%Y\') AS date_created_fr FROM chapters ORDER BY id DESC LIMIT '		.(($page-1)*$nb_chapters_per_page).", $nb_chapters_per_page");
+		$response = $db->prepare('SELECT id, title, author, content, DATE_FORMAT(date_created, \'%d/%m/%Y\') AS date_created_fr FROM chapters ORDER BY id DESC LIMIT '.(($page-1)*$nb_chapters_per_page).", $nb_chapters_per_page");
 		$response->execute();
 		return $response;
 	}

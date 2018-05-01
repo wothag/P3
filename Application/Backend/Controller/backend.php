@@ -1,11 +1,4 @@
 <?php
-//
-//require_once ('Model/ConnectManager.php');
-//require_once ('Model/WriteManager.php');
-//require_once ('Model/ChapterManager.php');
-//require_once ('../Frontend/Model/CommentManager.php');
-//require_once ('../Frontend/Model/PostManager.php');
-
 	/**
 	 *function using a method to check all the flag comments
 	 */

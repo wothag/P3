@@ -5,18 +5,18 @@ $_SESSION['token'] = $token;
 ?>
 <?php include_once ('View/Inc/header.php');?>
 
-                    <!--start of main panel-->
+<!--start of main panel-->
 <div class="col-sm-10">
     <h1> Ecrire un chapitre et le publier</h1>
     <div class="col-sm-12">
         <form action="index.php?action=validChapterForm" method="POST">
             <fieldset>
                 <div class="form-group">
-<!--                 <label for="title"<span class="FieldInfo">Chapitre:</span></label>-->
+<!-- <label for="title"<span class="FieldInfo">Chapitre:</span></label>-->
                     <input class="form-group" type="text" name="title" id="title" placeholder="Chapitre">
                 </div>
                 <div class="form-group">
-<!--                 <label for="author"<span class="FieldInfo">Auteur:</span></label>-->
+<!--<label for="author"<span class="FieldInfo">Auteur:</span></label>-->
                     <input class="form-group" type="text" name="author" id="author" placeholder="Auteur">
                 </div>
                 <div class="form-group">
@@ -26,10 +26,13 @@ $_SESSION['token'] = $token;
             </fieldset>
         </form>
     </div>
-    <br>
-    <input class="btn btn-success btn-block btn-lg" type="submit" name="PUBLIER">
-    <input type ="hidden" name="token" value="<?php echo $token;?>" />
-</div>
-                    <!--end of main panel-->
-<?php include_once ('View/Inc/footer.php');?>
+        <br>
+        <input class="btn btn-success btn-block btn-lg" type="submit" name="PUBLIER">
+        <input type ="hidden" name="token" value="<?php echo $token;?>" />
+    </div>
+<!--end of main panel-->
+    </body>
+</html>
+
+
 

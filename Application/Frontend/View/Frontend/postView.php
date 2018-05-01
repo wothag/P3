@@ -58,9 +58,10 @@ $title = htmlspecialchars($post['title']) ?>
                     <textarea id="comment" name="comment" rows="10" cols="120"></textarea>
                 </div>
             <div class="g-recaptcha" data-sitekey="6Lf8cEsUAAAAAE5bBIHVb0LJ_Zjt6tfTwcV3mX_X"></div>
-            <div><input type="submit" class="button1"/></div>
+            <div>
+                <input type="submit" class="button1"/>
+            </div>
         </form>
 </div>
-
 <?php $content = ob_get_clean();?>
 <?php require('template.php');?>

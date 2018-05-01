@@ -1,4 +1,4 @@
-<?php require_once('Application/Frontend/Model/PostManager.php');
+<?php
 ob_start();
 while ($data = $page_posts->fetch())
 {

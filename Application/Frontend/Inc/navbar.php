@@ -1,6 +1,5 @@
 
 <!DOCTYPE html>
-
 <head>
     <style>
         ul {
@@ -45,13 +44,9 @@
         }
     </style>
 </head>
-
-
-<ul>
-    <li><a href="index.php">Accueil</a></li>
-    <li><a href="index.php?action=listPosts">Accéder aux chapitres</a></li>
-
-
+    <ul>
+        <li><a href="index.php">Accueil</a></li>
+        <li><a href="index.php?action=listPosts">Accéder aux chapitres</a></li>
   </ul>
 </br>
 <hr>

@@ -2,8 +2,6 @@
 require_once 'Database.php';
 class CommentManager extends Database
 {
-
-
 	/**
 	 * @param $postId
 	 * @return PDOStatement

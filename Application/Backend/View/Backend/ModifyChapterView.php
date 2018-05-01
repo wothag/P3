@@ -36,7 +36,9 @@ $_SESSION['token'] = $token;?>
         </form>
         <?php include_once ('View/Inc/footer.php');?>
                       </div>
-                    <!--end of main panel-->
+                <!--end of main panel-->
+        </div>
+    </body>
+</html>
 
-                </div>
 
