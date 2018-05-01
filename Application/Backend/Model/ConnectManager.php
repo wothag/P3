@@ -28,6 +28,4 @@ class ConnectManager extends Database
 				return false;
 				}
 	}
-
-
 }
