@@ -1,0 +1,9 @@
+<?php
+//session_start();
+//require_once('controller/backend.php');
+//require_once('model/WriteManager.php');
+//require_once('model/ChapterManager.php');
+//require_once('model/ConnectManager.php');
+//require_once('../frontend/model/PostManager.php');
+//require_once('../frontend/model/CommentManager.php');
+//require_once('model/FlagManager.php');
